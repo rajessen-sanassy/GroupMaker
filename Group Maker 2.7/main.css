@@ -1,0 +1,107 @@
+body {
+    background: #e5e5e5;
+    font-size: 14px;
+    height: 480px;
+    overflow: hidden;
+    width: 300px;
+    line-height: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.toggle-wrap {
+    position: relative;
+    left: 8px;
+    font-size: 12.5px;
+
+}
+
+.toggle-wrap a {
+
+		display: inline-block;
+		background: #0086f4;
+		border-radius: 1000px;
+		position: relative;
+		width: 3em;
+		height: 1.25em;
+		vertical-align: middle;
+		margin: 0 0.5em;
+}
+.toggle-wrap a strong {
+			display: none;
+		}
+	
+
+
+.switch {
+	position: absolute;
+	top: 0.1em;
+	left: 0.15em;
+	height: 1em;
+	width: 8em;
+	background: #fff;
+	border-radius: 1000px;
+	transition: 0.4s;
+}
+.alt .switch {
+		left: calc(100% - 1.6em);
+}
+
+
+
+.numgroups-wrap {
+	display: none;
+  position: relative;
+  left: 10px;
+}
+.numgroups-wrap a {
+  display: none;
+  position: relative;
+  left: -10px;
+}
+.alt .numgroups-wrap {
+		display: inherit;
+}
+
+.pergroup-wrap {
+	display: inherit;
+  position: relative;
+  left: 10px;
+}
+.pergroup-wrap a {
+	display: inherit;
+  position: relative;
+  left: -10px;
+}
+.alt .pergroup-wrap {
+	display: none;
+}
+
+
+
+input, textarea, button {
+	font-size: 1em;
+	padding: 0.25em;
+  left: 10px;
+}
+
+.groups {
+	padding: 1em;
+	background: #ddd;
+	margin: 1em 0;
+	width: 90%;
+}
+
+.group {
+	display: inline-block;
+	vertical-align: top;
+	background: #fff;
+	padding: 1em;
+	margin: 0.25em;
+	width: 70%;
+	border-radius: 3px;
+	box-shadow: 0 0 0.5em rgba(0,0,0,0.1);
+}	
+.group h2 {
+		margin: 0;
+}
