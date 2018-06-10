@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+
+  "name": "Group Maker",
+  "version": "1.0",
+  "description": "Group Generator for Classes",
+ 
+
+  "browser_action": {
+   "default_icon": "icon.png",
+   "default_title": "Group Maker",
+   "default_popup": "popup.html"
+   }
+
+}
+ 
