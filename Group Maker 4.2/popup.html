@@ -1,0 +1,607 @@
+<!Doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css" type="text/css">
+
+ </head>
+<style>
+      header {
+          height: 25px;
+          background: #0086f4;
+          padding: 12px;
+          position: fixed;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 10;
+      }
+
+      header h1 {
+        position: relative;
+        text-align: 5px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: #fff;
+        line-height: 4px;
+        left: 31px;
+      }
+
+      text {
+        position: relative;
+        display: inline-block;
+        left: 10px;
+        top: 7px;
+      }
+
+      textarea {
+        resize: none;
+        width: 98%;
+        outline: none; 
+      }
+
+      .faker {
+          height: 34px;
+          background: transparent;
+          padding: none;
+          position: relative;
+          width: 100%;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 10;
+      }
+
+      .icon {
+        position: absolute;
+        width: 26px;
+        height: 26px;
+        outline: none;
+        left: 10px;
+        top: 12px;
+      }
+
+
+
+      /* width */
+      ::-webkit-scrollbar {
+          width: 1px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+          background: transparent; 
+      }
+       
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+          background: transparent; 
+      }
+
+
+
+      .class button {
+          display: block;
+          width: 35%;
+          background-color: none; /* Blue background */
+          border: 2px solid #0086f4; /* Green border */
+          color: ; /* Grey text */
+          padding: 10px 24px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          margin-left: 25%; /*Center the button*/
+          text-decoration: none;
+          outline: none; 
+          font-size: 12px;
+          opacity: 0.6;
+
+          
+
+      }
+
+      /* Add a background color on hover */
+      .class button:hover {
+          color: #00000; /* white text */
+          opacity: 1;
+      }
+
+      .class1 {
+        position: absolute;
+        left: 108px;
+        bottom: 330px;
+      }
+
+      .class2 {
+        position: absolute;
+        left: 108px;
+        bottom: 280px;
+      }
+      .class3 {
+        position: absolute;
+        left: 108px;
+        bottom: 230px;
+      }
+      .class4 {
+        position: absolute;
+        left: 108px;
+        bottom: 180px;
+      }
+
+
+
+
+
+      .options button {
+          display: block;
+          width: 50px;
+          height: 20px;
+          background-color: #000; /* Blue background */
+          border: none; /* Green border */
+          color: #fff; /* Grey text */
+          padding: 0;
+          cursor: pointer; /* Pointer/hand icon */
+          text-decoration: none;
+          outline: none; 
+          font-size: 8px;
+          opacity: 0.9;
+
+          
+
+      }
+
+
+      .save{
+        position: absolute;
+        left: 163px;
+        bottom: 107px;
+        text-align: center;
+      }
+      .save:hover {
+          background-color: #3cba54; /* white text */
+          opacity: 1;
+          box-shadow: inset 0px 0px 1px 1px white;
+        }
+
+      .clear {
+        position: absolute;
+        left: 103px;
+        bottom: 107px;
+      }
+
+      .clear:hover {
+          background-color: #db3236; /* white text */
+          opacity: 1;
+          box-shadow: inset 0px 0px 1px 1px white;
+        }
+
+
+      .names {
+        background: #f9f9f9;
+        padding: .5rem;
+        width: 50%;
+      }
+
+
+      .append {
+        position: absolute;
+        width: 23px;
+        height: 23px;
+        outline: none;
+        left: 213px;
+        top: -1px; 
+      }
+      .remove {
+        width: 23px;
+        height: 23px;
+        outline: none;  
+        position: absolute;
+        left: 240px;
+        top: -1px;  
+      }
+
+      .inputplus a {
+        position: relative;
+        right: 5px;
+        bottom: 0px;
+      }
+
+      .inputplus {
+        padding: 1em;
+        background: #ddd;
+        margin: 1em 0;
+        
+      }
+
+
+
+      a {
+        text-decoration: none;
+      }
+
+
+
+
+      .btn-group button {
+          display: block;
+          width: 100%;
+          background-color: #0086f4; /* Blue background */
+          border: none; /* Green border */
+          color: #E2E4E4; /* Grey text */
+          padding: 10px 24px; /* Some padding */
+          cursor: pointer; /* Pointer/hand icon */
+          margin-left: 25%; /*Center the button*/
+          text-decoration: none;
+          outline: none; 
+
+          
+
+      }
+
+      /* Add a background color on hover */
+      .btn-group button:hover {
+          color: #FFFFFF /* white text */
+      }
+      .btn-group button:
+
+
+
+
+
+
+
+
+
+
+
+
+.toggle-wrap {
+  a {
+    display: inline-block;
+    background: #444;
+    border-radius: 1000px;
+    position: relative;
+    width: 3em;
+    height: 1.25em;
+    vertical-align: middle;
+    margin: 0 0.5em;
+    
+    strong {
+      display: none;
+    }
+  }
+}
+
+.switch {
+  position: absolute;
+  top: 0.1em;
+  left: 0.15em;
+  height: 1em;
+  width: 1.5em;
+  background: #fff;
+  border-radius: 1000px;
+  transition: 0.3s;
+  outline: none;
+  
+  .alt & {
+    left: calc(100% - 1.6em);
+  }
+}
+
+
+
+.numgroups-wrap {
+  display: none;
+  
+    .alt & {
+    display: inherit;
+  }
+}
+
+.alt .pergroup-wrap {
+  display: none;
+}
+
+input, textarea, button {
+  font-size: 1em;
+  padding: 0.25em;
+}
+
+.groups {
+  padding: 1em;
+  background: #ddd;
+  margin: 1em 0;
+  width: 100%;
+}
+
+.group {
+  display: inline-block;
+  vertical-align: top;
+  background: #fff;
+  padding: 1em;
+  margin: 0.25em;
+  width: 79%;
+  border-radius: 3px;
+  box-shadow: 0 0 0.5em rgba(0,0,0,0.1);
+  
+  h2 {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+.checktext{
+  position: absolute;
+  left: 198px; 
+  bottom: 127.9px;
+  font-size: 8px; 
+  color: #000000; 
+  font-family: 
+  Trebuchet, Arial, sans-serif; 
+  font-weight: bold;
+}
+.checktext1{
+  position: absolute;
+  left: 200px; 
+  bottom: 142.9px;
+  font-size: 8px; 
+  color: #000000; 
+  font-family: 
+  Trebuchet, Arial, sans-serif; 
+  font-weight: bold;
+}
+.checktext2{
+  position: absolute;
+  left: 220px; 
+  bottom: 157px;
+  font-size: 8px; 
+  color: #000000; 
+  font-family: 
+  Trebuchet, Arial, sans-serif; 
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+
+.onoffswitch {
+    position: absolute; width: 35px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none; left: 250px; bottom: 132px;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #000000; border-radius: 15px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 9px; padding: 0; line-height: 9px;
+    font-size: 7px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 5px;
+    background-color: #3cba54; color: #000000;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 5px;
+    background-color: #db3236; color: #000000;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 1px; margin: 4px;
+    background: #000000;
+    position: absolute; top: 0; bottom: 0;
+    right: 22px;
+    border: 2px solid #000000; border-radius: 15px;
+   
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #000000; 
+}
+
+
+
+
+
+
+.onoffswitch5 {
+    position: absolute; width: 35px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none; left: 250px; bottom: 147px;
+}
+.onoffswitch5-checkbox {
+    display: none;
+}
+.onoffswitch5-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #000000; border-radius: 15px;
+}
+.onoffswitch5-inner {
+    display: block; width: 200%; margin-left: -100%;
+}
+.onoffswitch5-inner:before, .onoffswitch5-inner:after {
+    display: block; float: left; width: 50%; height: 9px; padding: 0; line-height: 9px;
+    font-size: 7px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch5-inner:before {
+    content: "ON";
+    padding-left: 5px;
+    background-color:  #3cba54; color: #000000;
+}
+.onoffswitch5-inner:after {
+    content: "OFF";
+    padding-right: 5px;
+    background-color: #db3236; color: #000000;
+    text-align: right;
+}
+.onoffswitch5-switch {
+    display: block; width: 1px; margin: 4px;
+    background: #000000;
+    position: absolute; top: 0; bottom: 0;
+    right: 22px;
+    border: 2px solid #000000; border-radius: 15px;
+}
+.onoffswitch5-checkbox:checked + .onoffswitch5-label .onoffswitch5-inner {
+    margin-left: 0;
+}
+.onoffswitch5-checkbox:checked + .onoffswitch5-label .onoffswitch5-switch {
+    right: 0px; 
+    background-color: #000000; 
+}
+
+
+
+
+
+
+
+      .slidecontainer {
+          width: 100%;
+      }
+
+      .pergroup {
+          -webkit-appearance: none;
+          width: 96.7%;
+          height: 25px;
+          background: #d3d3d3;
+          outline: none;
+          opacity: 0.7;
+          -webkit-transition: .2s;
+          transition: opacity .2s;
+      }
+
+      .pergroup:hover {
+          opacity: 1;
+      }
+
+      .pergroup::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          cursor: pointer;
+      }
+
+      .pergroup::-moz-range-thumb {
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          cursor: pointer;
+      }
+
+
+
+
+
+      .Contact {
+        position: relative;
+        text-align: center;
+        left: 65px;
+        bottom: 7px;
+        font-family: "Times New Roman", Times, serif;
+        font size: 10px;
+        font-weight: bold;
+      }
+
+
+
+      .numgroups {
+          -webkit-appearance: none;
+          width: 96.7%;
+          height: 25px;
+          background: #d3d3d3;
+          outline: none;
+          opacity: 0.7;
+          -webkit-transition: .2s;
+          transition: opacity .2s;
+      }
+
+      .numgroups:hover {
+          opacity: 1;
+      }
+
+      .numgroups::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          cursor: pointer;
+      }
+
+      .numgroups::-moz-range-thumb {
+          width: 25px;
+          height: 25px;
+          background: #4CAF50;
+          cursor: pointer;
+      }
+/* -------------------------------------------------------------------*/
+</style>
+
+    <body>
+            <header>
+                <h1>Group Maker</h1>
+                <img src="icon.png" class="icon">
+            </header>
+            <p class="faker"></p>
+<div class="wrap alt">
+<p class="toggle-wrap">Students per Group <a class="choice" style="outline: none;" href="#choice"><span class="switch"></span></a> Number of Groups</p>
+  <p class="pergroup-wrap">Number of Students per Group: <span id="demo"></span><a class="pergroup-wrap a"><input class="pergroup"  type="range" min="0" max="" value="0" id="Students" /></a></p>
+  <p class="numgroups-wrap">Number of Groups: <span id="demo1"></span><a class="numgroups-wrap a"><input class="numgroups" type="range" min="0" max="" value="0" id="Groups" /></a></p>
+</div>
+
+
+          <div class="btn-group" style="width:100%">
+  <a><button style="width:50%">GENERATE</button></a>
+            
+          </div>
+    
+    <p class="doom"><textarea readonly="readonly" class="names" id="students" cols="40" rows="15">
+      
+    </textarea><div class="class"><a href ="class1.html"><button class="class1" id="class1" >BLOCK A</button></a><a href ="class2.html"><button class="class2" id="class2">BLOCK B</button></a><a href ="class3.html"><button class="class3" id="class3">BLOCK C</button></a><a href ="class4.html"><button class="class4" id="class4">BLOCK D</button></a><div class="options"><button class="save" id="save">SAVE</button><button class="clear" id="clear">CLEAR</button></div><div class="onoffswitch">
+    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+    <label class="onoffswitch-label" for="myonoffswitch">
+        <span class="onoffswitch-inner"></span>
+        <span class="onoffswitch-switch"></span>
+    </label>
+</div><a class="checktext">AUTO SAVE:</a><div class="onoffswitch5">
+    <input type="checkbox" name="onoffswitch5" class="onoffswitch5-checkbox" id="myonoffswitch5" checked>
+    <label class="onoffswitch5-label" for="myonoffswitch5">
+        <span class="onoffswitch5-inner"></span>
+        <span class="onoffswitch5-switch"></span>
+    </label>
+</div><a class="checktext1">TIME AUTO:</a><a class="checktext2">SETTINGS</a></div></p>
+
+    <div class="inputplus" ><a class="inputplus a"><textarea class="plus" id="plus"  style="width: 190px; height: 18px;"></textarea><input class="remove" id="remove" type="image" value="Remove" src="minus.png" /><input class="append" type="image" value="Append" src="plus.png" /></a></div>
+
+  
+    <div class="groups"></div>
+    <p><a class="Contact">&copy; 2018, LDHSS, ICS4U, Inc.</a></p>
+
+<script src="stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js">
+ </script>
+
+<script src="jquery.min.js">
+</script>
+
+
+<script type ="text/javascript" src="time.js"></script>
+
+    </body>
+</html>
